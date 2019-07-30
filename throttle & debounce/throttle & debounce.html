@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Throttle (节流) & debounce (防抖动)</title>
+    <style type="text/css">
+        .button-container {
+            height: 200px;
+            width: 300px;
+            border: 1px solid gray;
+            border-radius: 4px;
+            margin: 50px;
+            padding: 20px;
+            display: inline-block;
+        }
+
+        button {
+            height: 40px;
+            padding: 5px;
+            cursor: pointer;
+        }
+
+        .hint {
+            color: orange;
+        }
+
+    </style>
+</head>
+<body>
+    <p>To throttle a function means to ensure that the functions is called at most once in a specified time period, for example, once every 10 secodes</p>
+    <p>A debounce function will ignore all calls to it util the calls have stopped for a specified period</p>
+    <p class="hint">Can also use functions from lodash to implement those two features.</p>
+    <div class="button-container">
+        <button class="throttle">Keep clicking to view throttle </button>
+        <p>Function will execute every 3 seconds no matter how many clicks</p>
+    </div>
+    <div class="button-container">
+        <button class="debounce">Keep clicking to view debounce </button>
+        <p>Function will only execute once.</p>
+    </div>
+</body>
+<script src="./lib.js" type="text/javascript"></script>
+</script>
+</html>
