@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Preact playground</title>
+</head>
+<body>
+    <div id="app"></div>
+</body>
+<script src="https://unpkg.com/preact"></script>
+<script type="module">
+var h = preact.h;
+
+// Create your app
+const app = h('div', null, 'Hello World!');
+
+// Inject your application into the an element with the id `app`.
+// Make sure that such an element exists in the dom ;)
+preact.render(app, document.getElementById('app'));
+</script>
+</script>
+</html>
